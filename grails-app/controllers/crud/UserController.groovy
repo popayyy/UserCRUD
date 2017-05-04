@@ -19,6 +19,11 @@ class UserController {
         respond User.list(params), model: [userInstanceCount: User.count()]
     }
 
+    def findUser(User userInstance) {
+
+        respond User.findAll(userInstance), model: [userInstanceCount: User.count()], view: "index"
+    }
+
     def show(User userInstance) {
         respond userInstance
     }

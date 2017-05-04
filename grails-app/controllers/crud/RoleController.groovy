@@ -15,6 +15,16 @@ class RoleController {
         respond Role.list(params), model:[roleInstanceCount: Role.count()]
     }
 
+    def find(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        respond Role.list(params), model: [roleInstanceCount: Role.count()]
+    }
+
+    def findRole(Role roleInstance) {
+
+        respond Role.findAll(roleInstance), model: [roleInstanceCount: Role.count()], view: "index"
+    }
+
     def show(Role roleInstance) {
         respond roleInstance
     }
