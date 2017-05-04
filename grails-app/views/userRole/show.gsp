@@ -24,7 +24,7 @@
                                                                         default="Role"/></span>
 
                 <span class="property-value" aria-labelledby="role-label"><g:link controller="role" action="show"
-                                                                                  id="${userRoleInstance?.role?.id}">${userRoleInstance?.role?.encodeAsHTML()}</g:link></span>
+                                                                                  id="${userRoleInstance?.role?.id}">${userRoleInstance?.role?.name}</g:link></span>
 
             </li>
         </g:if>
@@ -35,7 +35,7 @@
                                                                         default="User"/></span>
 
                 <span class="property-value" aria-labelledby="user-label"><g:link controller="user" action="show"
-                                                                                  id="${userRoleInstance?.user?.id}">${userRoleInstance?.user?.encodeAsHTML()}</g:link></span>
+                                                                                  id="${userRoleInstance?.user?.id}">${userRoleInstance?.user?.name}</g:link></span>
 
             </li>
         </g:if>

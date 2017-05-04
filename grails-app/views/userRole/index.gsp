@@ -22,9 +22,9 @@
         <thead>
         <tr>
 
-            <th><g:message code="userRole.role.label" default="Role"/></th>
-
             <th><g:message code="userRole.user.label" default="User"/></th>
+
+            <th><g:message code="userRole.role.label" default="Role"/></th>
 
             <th></th>
 
