@@ -11,7 +11,7 @@
 <a href="#list-userRole" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                                default="Skip to content&hellip;"/></a>
 
-<g:render template="/general/navigation"/>
+<g:render template="/general/navigation" model="[withoutFind: 'true']"/>
 
 <div id="list-userRole" class="content scaffold-list" role="main">
     <h1><g:message code="default.list.label" args="[entityName]"/></h1>
@@ -22,9 +22,9 @@
         <thead>
         <tr>
 
-            <th><g:message code="userRole.user.label" default="User"/></th>
+            <g:sortableColumn property="user.name" title="${message(code: 'userRole.user.label', default: 'User')}"/>
 
-            <th><g:message code="userRole.role.label" default="Role"/></th>
+            <g:sortableColumn property="role.name" title="${message(code: 'userRole.role.label', default: 'Role')}"/>
 
             <th></th>
 

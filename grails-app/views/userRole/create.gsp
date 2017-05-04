@@ -9,7 +9,9 @@
 <body>
 <a href="#create-userRole" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                                  default="Skip to content&hellip;"/></a>
-<g:render template="/general/navigation"/>
+
+<g:render template="/general/navigation" model="[withoutFind: 'true']"/>
+
 <div id="create-userRole" class="content scaffold-create" role="main">
     <h1><g:message code="default.create.label" args="[entityName]"/></h1>
     <g:if test="${flash.message}">
