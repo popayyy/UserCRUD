@@ -9,5 +9,6 @@ Have options:
 - Add User, Role
 - Delete User, Role
 - Showing and sorting Users and Roles
+- Find User and Role
 
 For linking User-Role used tabled UserRole.
